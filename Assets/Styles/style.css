@@ -1,0 +1,390 @@
+:root {
+  font-size: 62.5% !important;
+}
+
+* {
+  font-size: 1.6rem;
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 1.3rem;
+}
+
+.blue-button {
+  background-color: hsl(224, 93%, 58%);
+}
+
+.blue-button:hover {
+  background-color: hsla(224, 93%, 58%, 0.6);
+}
+
+.centralize {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centralize-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.self-centralize {
+  align-self: center;
+  justify-self: center;
+}
+
+.mobile-content {
+  display: none;
+}
+
+.desktop-content {
+  display: inline-block;
+}
+
+@media all and (max-width: 376px) {
+  .mobile-centralize {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-centralize-column {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mobile-content {
+    display: inline-block !important;
+  }
+  .desktop-content {
+    display: none !important;
+  }
+}
+.texts-and-links {
+  width: 100%;
+  justify-content: flex-start;
+}
+.texts-and-links h2 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+.texts-and-links p {
+  margin-bottom: 1.5rem;
+}
+
+form input {
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  border: 1px solid rgb(117, 117, 117);
+  font-size: 1.4rem;
+}
+form button {
+  padding: 0.5rem 2rem;
+  color: white;
+  border-radius: 0.4rem;
+  border: none;
+  font-size: 1.4rem;
+}
+
+section[role=main] {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+section[role=main] div[role=menu] {
+  height: 7rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 10rem;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+}
+section[role=main] div[role=menu] .links a {
+  margin-right: 2rem;
+}
+section[role=main] div[role=menu] .logo img {
+  width: 10rem;
+}
+section[role=main] div[role=body] .level-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+  padding: 0rem 10rem;
+}
+section[role=main] div[role=body] .level-1 img {
+  width: 100%;
+}
+section[role=main] div[role=body] .level-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+  position: relative;
+  padding: 0rem 10rem;
+  margin-top: 20rem;
+  background-color: hsl(240, 75%, 98%);
+  padding-top: 4rem;
+  padding-bottom: 10rem;
+}
+section[role=main] div[role=body] .level-2 .background {
+  position: absolute;
+  top: -15%;
+  width: 100%;
+  z-index: -1;
+}
+section[role=main] div[role=body] .level-2 .body-images {
+  width: 100%;
+}
+section[role=main] div[role=body] .level-2 .texts-and-links a {
+  color: hsl(170, 45%, 43%);
+  border-bottom: 1px solid hsl(170, 45%, 43%);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+section[role=main] div[role=body] .level-2 .texts-and-links a:hover {
+  filter: brightness(150%);
+}
+section[role=main] div[role=body] .level-2 .texts-and-links .qout {
+  background-color: white;
+  align-items: flex-start !important;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 5px rgb(110, 110, 110);
+  margin-top: 4rem;
+  width: 60%;
+}
+section[role=main] div[role=body] .level-2 .texts-and-links .qout p {
+  font-size: 1.4rem;
+}
+section[role=main] div[role=body] .level-2 .texts-and-links .qout .qout-img {
+  margin-bottom: 1.5rem;
+}
+section[role=main] div[role=body] .level-2 .texts-and-links .qout .qout-profile {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+section[role=main] div[role=body] .level-2 .texts-and-links .qout .qout-profile .profile-pic {
+  width: 4rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+section[role=main] div[role=body] .level-2 .texts-and-links .qout .qout-profile .name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0%;
+}
+section[role=main] div[role=body] .level-2 .texts-and-links .qout .qout-profile .condition {
+  font-size: 1.3rem;
+  margin: 0%;
+}
+section[role=main] div[role=body] .level-2 .texts-and-links .qout .qout-profile .profile-details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+section[role=main] div[role=footer] .top-footer {
+  background-color: hsl(238, 22%, 44%);
+  height: 25rem;
+  padding: 6rem 10rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+}
+section[role=main] div[role=footer] .top-footer .texts h3 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+section[role=main] div[role=footer] .top-footer .texts p {
+  color: white;
+  width: 75%;
+}
+section[role=main] div[role=footer] .top-footer form {
+  width: 70%;
+  height: 50%;
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 5%;
+}
+section[role=main] div[role=footer] .top-footer form button {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+section[role=main] div[role=footer] .bottom-footer {
+  background-color: hsl(243, 87%, 12%);
+  height: 30rem;
+  padding: 4rem 10rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+section[role=main] div[role=footer] .bottom-footer .footer-logo {
+  grid-row: 1/2;
+  filter: brightness(0%) invert(100%);
+}
+section[role=main] div[role=footer] .bottom-footer .contact {
+  grid-row: 2/3;
+}
+section[role=main] div[role=footer] .bottom-footer .contact a {
+  color: white;
+}
+section[role=main] div[role=footer] .bottom-footer .contact a img {
+  margin-right: 1rem;
+}
+section[role=main] div[role=footer] .bottom-footer .links-1, section[role=main] div[role=footer] .bottom-footer .links-2 {
+  grid-row: 2/3;
+}
+section[role=main] div[role=footer] .bottom-footer .links-1 a, section[role=main] div[role=footer] .bottom-footer .links-2 a {
+  color: white;
+}
+section[role=main] div[role=footer] .bottom-footer .image-links {
+  grid-row: 2/3;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+section[role=main] div[role=footer] .bottom-footer .image-links a {
+  padding: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+section[role=main] div[role=footer] .bottom-footer .image-links a img {
+  filter: invert(100%);
+  width: 100%;
+}
+section[role=main] div[role=footer] .bottom-footer .contact, section[role=main] div[role=footer] .bottom-footer .links-1, section[role=main] div[role=footer] .bottom-footer .links-2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+section[role=main] div[role=footer] .bottom-footer .contact a, section[role=main] div[role=footer] .bottom-footer .links-1 a, section[role=main] div[role=footer] .bottom-footer .links-2 a {
+  margin-bottom: 1.5rem;
+}
+
+@media all and (max-width: 376px) {
+  section[role=main] div[role=menu] {
+    padding: 0rem 2rem !important;
+    width: 100%;
+  }
+  section[role=main] .level-1, section[role=main] .level-2 {
+    padding: 0rem 2rem !important;
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  section[role=main] .level-1 h2, section[role=main] .level-1 p {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  section[role=main] .level-1 h2 {
+    font-size: 2.5rem;
+  }
+  section[role=main] .level-1 p {
+    font-size: 1.5rem;
+  }
+  section[role=main] .level-1 form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  section[role=main] .level-1 form button {
+    margin-top: 1rem;
+    width: 85%;
+    padding: 1rem;
+  }
+  section[role=main] .level-1 form input {
+    width: 85%;
+    padding: 1rem;
+  }
+  section[role=main] .level-2 {
+    padding: 3rem 2rem !important;
+  }
+  section[role=main] .level-2 .background {
+    top: -5% !important;
+  }
+  section[role=main] .level-2 h2 {
+    margin-top: 2rem !important;
+    font-size: 2rem;
+  }
+  section[role=main] .level-2 p {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+  }
+  section[role=main] .level-2 .qout {
+    width: 85% !important;
+    margin: 3rem auto !important;
+  }
+  section[role=main] .texts, section[role=main] .top-footer, section[role=main] form {
+    height: auto !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  section[role=main] .top-footer {
+    padding: 4rem 2rem !important;
+  }
+  section[role=main] .top-footer .texts {
+    padding: 0rem;
+  }
+  section[role=main] .top-footer h3 {
+    font-size: 2rem !important;
+    text-align: center;
+    width: 85%;
+  }
+  section[role=main] .top-footer p {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 85%;
+  }
+  section[role=main] .top-footer form {
+    width: 75% !important;
+    margin-top: 2rem;
+  }
+  section[role=main] .top-footer form input {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 100%;
+  }
+  section[role=main] .top-footer form button {
+    padding: 1rem;
+    width: 100% !important;
+  }
+  section[role=main] .bottom-footer {
+    height: auto !important;
+    display: flex !important;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 4rem 4rem !important;
+  }
+  section[role=main] .bottom-footer .contact, section[role=main] .bottom-footer .links-1, section[role=main] .bottom-footer .image-links, section[role=main] .bottom-footer .links-2 {
+    margin-top: 2rem;
+  }
+  section[role=main] .bottom-footer .image-links {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=style.css.map */
